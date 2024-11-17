@@ -10,8 +10,6 @@ fn main() {
     for lines in content.lines()
     {
         let game_info: Vec<&str> = lines.split(":").collect();
-        let game_str: Vec<&str> = game_info[0].split(" ").collect();
-        let game_number = game_str[1].parse::<i32>().unwrap();
 
         let mut reds = Vec::new();
         let mut blues = Vec::new();
